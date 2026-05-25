@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///Users/camilocruz/Downloads/plano_negocios_lab_protetico_1.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano de Negócios — Laboratório Protético Digital | Contagem, MG</title>
+<link href="./Plano de Negócios — Laboratório Protético Digital _ Contagem, MG_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --teal-50: #E1F5EE; --teal-100: #9FE1CB; --teal-400: #1D9E75; --teal-600: #0F6E56; --teal-800: #085041;
+    --blue-50: #E6F1FB; --blue-100: #B5D4F4; --blue-400: #378ADD; --blue-600: #185FA5; --blue-800: #0C447C;
+    --amber-50: #FAEEDA; --amber-100: #FAC775; --amber-400: #BA7517; --amber-600: #854F0B;
+    --coral-50: #FAECE7; --coral-400: #D85A30; --coral-600: #993C1D;
+    --purple-50: #EEEDFE; --purple-400: #7F77DD; --purple-600: #534AB7; --purple-800: #3C3489;
+    --gray-50: #F1EFE8; --gray-100: #D3D1C7; --gray-400: #888780; --gray-600: #5F5E5A; --gray-800: #444441;
+    --green-50: #EAF3DE; --green-400: #639922; --green-600: #3B6D11;
+    --red-50: #FCEBEB; --red-400: #E24B4A; --red-600: #A32D2D;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #f8faf9;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+
+  /* COVER */
+  .cover {
+    background: linear-gradient(135deg, #0a2e24 0%, #0F6E56 50%, #1D9E75 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 20% 80%, rgba(29,158,117,0.3) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(9,116,88,0.2) 0%, transparent 50%);
+  }
+  .cover-badge {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 40px;
+    margin-bottom: 32px;
+    position: relative;
+  }
+  .cover h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(42px, 6vw, 72px);
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .cover h1 em {
+    font-style: italic;
+    color: #9FE1CB;
+  }
+  .cover-sub {
+    font-size: 18px;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 48px;
+    position: relative;
+  }
+  .cover-stats {
+    display: flex;
+    gap: 40px;
+    position: relative;
+  }
+  .cover-stat {
+    text-align: center;
+  }
+  .cover-stat .num {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .cover-stat .lbl {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .cover-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    align-self: center;
+  }
+
+  /* LOGO SECTION */
+  .logo-display {
+    background: #fff;
+    padding: 80px 40px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7e5;
+  }
+  .logo-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .logo-icon {
+    width: 72px;
+    height: 72px;
+  }
+  .logo-text-block { text-align: left; }
+  .logo-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px;
+    color: #0F6E56;
+    line-height: 1;
+  }
+  .logo-tagline {
+    font-size: 13px;
+    color: #888780;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 40px auto 0;
+  }
+  .brand-swatch {
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+  }
+  .swatch-circle {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: 2px solid rgba(0,0,0,0.06);
+  }
+  .swatch-name { font-size: 13px; font-weight: 600; }
+  .swatch-hex { font-size: 11px; color: #888; font-family: monospace; }
+  .typography-row {
+    display: flex;
+    gap: 32px;
+    max-width: 900px;
+    margin: 40px auto 0;
+    text-align: left;
+  }
+  .type-sample { flex: 1; }
+  .type-label { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+
+  /* SECTIONS */
+  .section {
+    padding: 80px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #1D9E75;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    color: #0a2e24;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .section-intro {
+    font-size: 16px;
+    color: #5F5E5A;
+    max-width: 680px;
+    margin-bottom: 48px;
+    line-height: 1.7;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid #e5e7e5;
+    margin: 0;
+  }
+
+  /* CARDS */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #e5e7e5;
+    border-radius: 16px;
+    padding: 24px;
+  }
+  .card-icon {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+  .card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0a2e24;
+    margin-bottom: 8px;
+  }
+  .card p {
+    font-size: 14px;
+    color: #5F5E5A;
+    line-height: 1.6;
+  }
+  .card .value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0F6E56;
+    margin-bottom: 4px;
+  }
+  .card .sub-value {
+    font-size: 13px;
+    color: #888;
+  }
+
+  /* TABLES */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7e5;
+  }
+  thead th {
+    background: #0a2e24;
+    color: #fff;
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  tbody tr { border-bottom: 1px solid #f0f0f0; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: #f8faf9; }
+  tbody td { padding: 12px 16px; color: #333; }
+  tbody td.right { text-align: right; font-weight: 600; color: #0F6E56; }
+  tbody td.muted { color: #888; font-size: 13px; }
+  tfoot td {
+    padding: 14px 16px;
+    font-weight: 700;
+    background: #E1F5EE;
+    color: #0a2e24;
+    font-size: 15px;
+  }
+
+  /* STEPS */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .step {
+    display: flex;
+    gap: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .step:last-child { border-bottom: none; }
+  .step-num {
+    width: 40px; height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background: #0F6E56;
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .step-content h4 { font-size: 15px; font-weight: 600; color: #0a2e24; margin-bottom: 4px; }
+  .step-content p { font-size: 14px; color: #5F5E5A; line-height: 1.5; }
+  .step-content .tag {
+    display: inline-block;
+    background: #E1F5EE;
+    color: #0F6E56;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-top: 6px;
+  }
+
+  /* SCENARIO BLOCKS */
+  .scenarios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .scenario {
+    border-radius: 16px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .scenario.pessimista { background: #FCEBEB; border: 1px solid #F7C1C1; }
+  .scenario.moderado { background: #E1F5EE; border: 2px solid #9FE1CB; }
+  .scenario.otimista { background: #E6F1FB; border: 1px solid #B5D4F4; }
+  .scenario .badge {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1px; padding: 4px 12px; border-radius: 20px;
+    margin-bottom: 16px; display: inline-block;
+  }
+  .pessimista .badge { background: #F7C1C1; color: #A32D2D; }
+  .moderado .badge { background: #9FE1CB; color: #0F6E56; }
+  .otimista .badge { background: #B5D4F4; color: #185FA5; }
+  .scenario .big-num { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  .pessimista .big-num { color: #A32D2D; }
+  .moderado .big-num { color: #0F6E56; }
+  .otimista .big-num { color: #185FA5; }
+  .scenario .detail { font-size: 13px; color: #5F5E5A; line-height: 1.6; }
+  .scenario .detail strong { font-weight: 600; color: #1a1a1a; }
+  .scenario-featured {
+    position: absolute; top: -10px; right: -10px;
+    background: #0F6E56; color: #fff;
+    font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px;
+    padding: 6px 14px;
+    border-radius: 0 0 0 12px;
+  }
+
+  /* SWOT */
+  .swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .swot-cell {
+    padding: 32px;
+  }
+  .swot-cell.forcas { background: #E1F5EE; }
+  .swot-cell.fraquezas { background: #FCEBEB; }
+  .swot-cell.oportunidades { background: #E6F1FB; }
+  .swot-cell.ameacas { background: #FAEEDA; }
+  .swot-cell h3 {
+    font-size: 13px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2px; margin-bottom: 16px;
+  }
+  .forcas h3 { color: #0F6E56; }
+  .fraquezas h3 { color: #A32D2D; }
+  .oportunidades h3 { color: #185FA5; }
+  .ameacas h3 { color: #854F0B; }
+  .swot-cell ul { list-style: none; }
+  .swot-cell ul li {
+    font-size: 13px; color: #333;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .swot-cell ul li:last-child { border: none; }
+  .swot-cell ul li::before { content: '→'; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+  .forcas ul li::before { color: #0F6E56; }
+  .fraquezas ul li::before { color: #A32D2D; }
+  .oportunidades ul li::before { color: #185FA5; }
+  .ameacas ul li::before { color: #854F0B; }
+
+  /* EQUIPMENT */
+  .equip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .equip-card {
+    background: #fff;
+    border: 1px solid #e5e7e5;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .equip-header {
+    background: #0a2e24;
+    padding: 16px 20px;
+    color: #fff;
+  }
+  .equip-header h3 { font-size: 15px; font-weight: 600; }
+  .equip-header span { font-size: 12px; color: rgba(255,255,255,0.6); }
+  .equip-body { padding: 20px; }
+  .equip-row {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    padding: 8px 0;
+    border-bottom: 1px solid #f5f5f5;
+    gap: 12px;
+  }
+  .equip-row:last-child { border: none; }
+  .equip-row .label { font-size: 13px; color: #888; min-width: 80px; }
+  .equip-row .val { font-size: 13px; color: #1a1a1a; font-weight: 500; text-align: right; }
+  .equip-price {
+    margin-top: 12px;
+    padding: 12px;
+    background: #E1F5EE;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .equip-price .price-lbl { font-size: 11px; color: #0F6E56; text-transform: uppercase; letter-spacing: 1px; }
+  .equip-price .price-val { font-size: 20px; font-weight: 700; color: #0a2e24; }
+
+  /* NAMES */
+  .names-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .name-card {
+    background: #fff;
+    border: 1px solid #e5e7e5;
+    border-radius: 12px;
+    padding: 16px;
+    transition: border-color 0.2s;
+  }
+  .name-card:hover { border-color: #1D9E75; }
+  .name-card.top { border: 2px solid #1D9E75; background: #f0fbf6; }
+  .name-card .name { font-size: 16px; font-weight: 700; color: #0a2e24; margin-bottom: 4px; }
+  .name-card .reason { font-size: 12px; color: #888; line-height: 1.4; }
+  .name-card .star { font-size: 11px; color: #0F6E56; font-weight: 600; margin-bottom: 6px; }
+
+  /* FINANCIAL */
+  .fin-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .fin-row:last-child { border: none; }
+  .fin-row .item { font-size: 14px; color: #333; }
+  .fin-row .amount { font-size: 14px; font-weight: 600; color: #0F6E56; }
+  .fin-row .amount.neg { color: #A32D2D; }
+  .fin-box {
+    background: #fff;
+    border: 1px solid #e5e7e5;
+    border-radius: 16px;
+    padding: 24px;
+  }
+  .fin-box h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight {
+    background: linear-gradient(135deg, #0a2e24, #0F6E56);
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .highlight .big { font-size: 48px; font-weight: 800; line-height: 1; }
+  .highlight .label { font-size: 13px; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; }
+  .highlight p { font-size: 15px; opacity: 0.9; line-height: 1.6; }
+
+  /* FISCAL */
+  .regime-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .regime-card {
+    border: 1px solid #e5e7e5;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+  }
+  .regime-card.rec { border: 2px solid #1D9E75; background: #f0fbf6; }
+  .regime-card h4 { font-size: 14px; font-weight: 700; color: #0a2e24; margin-bottom: 8px; }
+  .regime-card p { font-size: 13px; color: #5F5E5A; line-height: 1.5; }
+  .regime-card .rate { font-size: 22px; font-weight: 800; color: #0F6E56; margin-bottom: 4px; }
+  .rec-badge {
+    display: inline-block;
+    background: #1D9E75; color: #fff;
+    font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px;
+    padding: 3px 10px; border-radius: 20px;
+    margin-bottom: 8px;
+  }
+
+  /* COMPETITORS */
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7e5;
+  }
+  .comp-table th {
+    background: #0a2e24;
+    color: #fff;
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .comp-table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+  }
+  .comp-table tr:last-child td { border: none; }
+  .diff-badge {
+    display: inline-block;
+    background: #E1F5EE; color: #0F6E56;
+    font-size: 11px; font-weight: 600;
+    padding: 3px 8px; border-radius: 6px;
+    margin: 2px;
+  }
+
+  /* PRICING */
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7e5;
+    margin-bottom: 24px;
+  }
+  .price-table th {
+    background: #0F6E56;
+    color: #fff;
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .price-table td { padding: 11px 14px; border-bottom: 1px solid #f0f0f0; color: #333; }
+  .price-table tr:last-child td { border: none; }
+  .price-table td.price { font-weight: 700; color: #0F6E56; }
+  .price-table td.margin { color: #0a2e24; font-weight: 600; }
+
+  /* FOOTER */
+  footer {
+    background: #0a2e24;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 40px;
+    font-size: 13px;
+  }
+  footer strong { color: #fff; }
+
+  /* RESPONSIVE */
+  @media (max-width: 700px) {
+    .scenarios { grid-template-columns: 1fr; }
+    .swot-grid { grid-template-columns: 1fr; }
+    .regime-grid { grid-template-columns: 1fr; }
+    .typography-row { flex-direction: column; }
+    .cover-stats { flex-wrap: wrap; gap: 20px; }
+    .cover-divider { display: none; }
+    .highlight { flex-direction: column; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== CAPA ========== -->
+<div class="cover">
+  <div class="cover-badge">Plano de Negócios Completo · 2025</div>
+  <h1>Laboratório Protético<br><em>Digital</em></h1>
+  <p class="cover-sub">Contagem · Minas Gerais · Dois Sócios · Investimento R$ 400k</p>
+  <div class="cover-stats">
+    <div class="cover-stat">
+      <div class="num">R$ 400k</div>
+      <div class="lbl">Investimento Total</div>
+    </div>
+    <div class="cover-divider"></div>
+    <div class="cover-stat">
+      <div class="num">2 Sócios</div>
+      <div class="lbl">Sociedade</div>
+    </div>
+    <div class="cover-divider"></div>
+    <div class="cover-stat">
+      <div class="num">18 meses</div>
+      <div class="lbl">Payback Estimado</div>
+    </div>
+    <div class="cover-divider"></div>
+    <div class="cover-stat">
+      <div class="num">CAD/CAM</div>
+      <div class="lbl">Tecnologia</div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== BRANDING ========== -->
+<div class="logo-display">
+  <div class="section-label" style="margin-bottom:8px;">Identidade Visual</div>
+  <div style="margin-bottom: 48px;">
+    <div class="logo-mark">
+      <svg class="logo-icon" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="72" height="72" rx="20" fill="#0F6E56"></rect>
+        <path d="M18 44 C18 44 22 28 28 28 C32 28 33 34 36 34 C39 34 40 28 44 28 C50 28 54 44 54 44" stroke="#9FE1CB" stroke-width="3" stroke-linecap="round" fill="none"></path>
+        <circle cx="36" cy="34" r="5" fill="#fff" opacity="0.9"></circle>
+        <circle cx="36" cy="34" r="2.5" fill="#0F6E56"></circle>
+        <rect x="22" y="46" width="28" height="3" rx="1.5" fill="rgba(255,255,255,0.3)"></rect>
+        <rect x="28" y="51" width="16" height="2" rx="1" fill="rgba(255,255,255,0.2)"></rect>
+      </svg>
+      <div class="logo-text-block">
+        <div class="logo-name">OralTech</div>
+        <div class="logo-tagline">Laboratório Protético Digital</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="brand-grid">
+    <div class="brand-swatch" style="background:#E1F5EE;">
+      <div class="swatch-circle" style="background:#0F6E56;"></div>
+      <div class="swatch-name" style="color:#085041;">Verde Teal</div>
+      <div class="swatch-hex">#0F6E56 · Principal</div>
+    </div>
+    <div class="brand-swatch" style="background:#f5f5f3;">
+      <div class="swatch-circle" style="background:#0a2e24;"></div>
+      <div class="swatch-name" style="color:#0a2e24;">Verde Noite</div>
+      <div class="swatch-hex">#0A2E24 · Secundária</div>
+    </div>
+    <div class="brand-swatch" style="background:#f5f5f3;">
+      <div class="swatch-circle" style="background:#9FE1CB;"></div>
+      <div class="swatch-name" style="color:#085041;">Menta</div>
+      <div class="swatch-hex">#9FE1CB · Destaque</div>
+    </div>
+    <div class="brand-swatch" style="background:#f5f5f3;">
+      <div class="swatch-circle" style="background:#f8faf9; border: 2px solid #e5e7e5;"></div>
+      <div class="swatch-name" style="color:#444;">Off-White</div>
+      <div class="swatch-hex">#F8FAF9 · Fundo</div>
+    </div>
+  </div>
+
+  <div class="typography-row">
+    <div class="type-sample">
+      <div class="type-label">Display — DM Serif Display</div>
+      <div style="font-family:&#39;DM Serif Display&#39;,serif; font-size:36px; color:#0a2e24; line-height:1.1;">A precisão<br><em style="color:#0F6E56;">no detalhe</em></div>
+    </div>
+    <div class="type-sample">
+      <div class="type-label">Body — Plus Jakarta Sans</div>
+      <div style="font-size:16px; color:#333; line-height:1.7; max-width:320px;">Tecnologia CAD/CAM de última geração para laboratórios protéticos com excelência em qualidade e entrega.</div>
+    </div>
+    <div class="type-sample">
+      <div class="type-label">Labels &amp; UI</div>
+      <div style="font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0F6E56; margin-bottom:8px;">CATEGORIA</div>
+      <div style="font-size:12px; color:#888; letter-spacing:1px;">suporte@oraltech.com.br</div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 20 NOMES ========== -->
+<hr class="divider">
+<div class="section">
+  <div class="section-label">Branding · Naming</div>
+  <h2 class="section-title">20 Sugestões de Nomes<br>Registráveis no INPI</h2>
+  <p class="section-intro">Nomes verificados quanto à disponibilidade de conceito e sonoridade, adequados para registro de marca no INPI, classe 40 (serviços) e 10 (produtos/equipamentos odontológicos). Os marcados com ★ são os mais recomendados.</p>
+
+  <div class="names-grid">
+    <div class="name-card top">
+      <div class="star">★ TOP RECOMENDADO</div>
+      <div class="name">OralTech</div>
+      <div class="reason">Curto, sonoro, combina oral + tecnologia. Fácil de memorizar.</div>
+    </div>
+    <div class="name-card top">
+      <div class="star">★ TOP RECOMENDADO</div>
+      <div class="name">Dentalab</div>
+      <div class="reason">Fusão de dental + lab. Direto ao ponto, profissional.</div>
+    </div>
+    <div class="name-card top">
+      <div class="star">★ TOP RECOMENDADO</div>
+      <div class="name">ProthX</div>
+      <div class="reason">Protética + tecnologia. Moderno, impacto visual forte.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Axium Lab</div>
+      <div class="reason">Remete a precisão e eixo (axis). Elegante e técnico.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">DigiSmile</div>
+      <div class="reason">Digital + smile. Comunicativo e memorável.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Vertex Lab</div>
+      <div class="reason">Vértice — alto padrão, ápice de qualidade.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Precium</div>
+      <div class="reason">Precisão + premium. Sofisticado.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Cad&amp;Lab</div>
+      <div class="reason">Direto à tecnologia CAD. Fácil SEO.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Zenith Dental</div>
+      <div class="reason">Zênite — ponto mais alto. Aspiracional.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Nexus Lab</div>
+      <div class="reason">Conexão, elo. Remete à integração digital.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Studio Oral</div>
+      <div class="reason">Estúdio criativo aplicado à odontologia.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Vitrum Lab</div>
+      <div class="reason">Vitrum = vidro/cerâmica em latim. Técnico e sofisticado.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">DigiMold</div>
+      <div class="reason">Digital + molde. Direto ao processo.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Arclab</div>
+      <div class="reason">Arco dental + laboratório. Compacto e memorável.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Morpho Lab</div>
+      <div class="reason">Morfologia, forma. Estético e técnico.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Occlusion Studio</div>
+      <div class="reason">Oclusão dental. Muito específico do setor.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Zircon Lab</div>
+      <div class="reason">Material nobre da prótese — zircônia.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Exacta Lab</div>
+      <div class="reason">Exatidão. Posicionamento premium de precisão.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Profix Digital</div>
+      <div class="reason">Prótese + digital. Simples e descritivo.</div>
+    </div>
+    <div class="name-card">
+      <div class="name">Forma Lab</div>
+      <div class="reason">Forma perfeita — minimalista e elegante.</div>
+    </div>
+  </div>
+  <p style="font-size:13px; color:#888; margin-top:20px;">⚠️ Antes de registrar, verifique disponibilidade em <a href="https://busca.inpi.gov.br/pePI/jsp/marcas/PesquisaBasicaForm.do" target="_blank" style="color:#0F6E56;">busca.inpi.gov.br</a> nas classes NCL 10 e 40.</p>
+</div>
+
+<!-- ========== EQUIPAMENTOS ========== -->
+<hr class="divider">
+<div class="section" style="background:#f0fbf6; border-radius:0; max-width:100%; padding:80px 40px;">
+<div style="max-width:1000px; margin:0 auto;">
+  <div class="section-label">Equipamentos</div>
+  <h2 class="section-title">Estudo de Equipamentos Recomendados</h2>
+  <p class="section-intro">Seleção de melhores marcas, modelos e fornecedores para cada equipamento essencial, com relação custo-benefício para início de operação.</p>
+
+  <div class="equip-grid">
+    <div class="equip-card">
+      <div class="equip-header">
+        <h3>Fresadora Híbrida CAD/CAM</h3>
+        <span>Principal equipamento de produção</span>
+      </div>
+      <div class="equip-body">
+        <div class="equip-row"><span class="label">Recomendado</span><span class="val">Coritec 150i PRO (imes-icore)</span></div>
+        <div class="equip-row"><span class="label">Alternativa 1</span><span class="val">VHF R5 (úmido/seco 5 eixos)</span></div>
+        <div class="equip-row"><span class="label">Alternativa 2</span><span class="val">DGSHAPE DWX-52D (Roland)</span></div>
+        <div class="equip-row"><span class="label">Eixos</span><span class="val">5 eixos (úmido/seco)</span></div>
+        <div class="equip-row"><span class="label">Materiais</span><span class="val">Zircônia, PMMA, Cera, Titânio, Cromo-Cobalto</span></div>
+        <div class="equip-row"><span class="label">Fornecedor</span><span class="val">Dental Cremer · Dental Speed · Bioart</span></div>
+        <div class="equip-price">
+          <div class="price-lbl">Investimento estimado</div>
+          <div class="price-val">R$ 80.000 – R$ 140.000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="equip-card">
+      <div class="equip-header">
+        <h3>Scanner de Bancada 3D</h3>
+        <span>Digitalização de modelos e troqueis</span>
+      </div>
+      <div class="equip-body">
+        <div class="equip-row"><span class="label">Recomendado</span><span class="val">UP3D UP400 (melhor custo-benefício)</span></div>
+        <div class="equip-row"><span class="label">Alternativa 1</span><span class="val">UP3D UP560 (maior precisão)</span></div>
+        <div class="equip-row"><span class="label">Alternativa 2</span><span class="val">3Shape D2000 (premium)</span></div>
+        <div class="equip-row"><span class="label">Precisão</span><span class="val">≤ 5 μm</span></div>
+        <div class="equip-row"><span class="label">Velocidade</span><span class="val">12 seg / arcada completa</span></div>
+        <div class="equip-row"><span class="label">Fornecedor</span><span class="val">DentalProtese.com.br · Dental Cremer</span></div>
+        <div class="equip-price">
+          <div class="price-lbl">Investimento estimado</div>
+          <div class="price-val">R$ 18.000 – R$ 45.000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="equip-card">
+      <div class="equip-header">
+        <h3>Impressora 3D Dental</h3>
+        <span>Provisórios, guias, modelos</span>
+      </div>
+      <div class="equip-body">
+        <div class="equip-row"><span class="label">Recomendado</span><span class="val">Anycubic Photon M7 Pro (14K)</span></div>
+        <div class="equip-row"><span class="label">Alternativa 1</span><span class="val">Phrozen Sonic XL 4K</span></div>
+        <div class="equip-row"><span class="label">Premium</span><span class="val">Formlabs Form 3B+</span></div>
+        <div class="equip-row"><span class="label">Resolução</span><span class="val">14K / 52 μm</span></div>
+        <div class="equip-row"><span class="label">Resinas</span><span class="val">Cosmos Creation, AllPrime, Yller</span></div>
+        <div class="equip-row"><span class="label">Fornecedor</span><span class="val">DentalProtese.com.br · Dental Cremer</span></div>
+        <div class="equip-price">
+          <div class="price-lbl">Investimento estimado</div>
+          <div class="price-val">R$ 8.000 – R$ 30.000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="equip-card">
+      <div class="equip-header">
+        <h3>Forno para Cerâmica / Zircônia</h3>
+        <span>Sinterização e cristalização</span>
+      </div>
+      <div class="equip-body">
+        <div class="equip-row"><span class="label">Recomendado</span><span class="val">Programat CS2 (Ivoclar)</span></div>
+        <div class="equip-row"><span class="label">Alternativa 1</span><span class="val">Nabertherm LT 40/12 (sinterização)</span></div>
+        <div class="equip-row"><span class="label">Alternativa 2</span><span class="val">Mihm-Vogt ZIRKONOFEN 150</span></div>
+        <div class="equip-row"><span class="label">Temperatura</span><span class="val">até 1.600°C</span></div>
+        <div class="equip-row"><span class="label">Ciclo</span><span class="val">~8 h (express 90 min disponível)</span></div>
+        <div class="equip-row"><span class="label">Fornecedor</span><span class="val">Ivoclar Brasil · Dental Cremer · Bioart</span></div>
+        <div class="equip-price">
+          <div class="price-lbl">Investimento estimado</div>
+          <div class="price-val">R$ 25.000 – R$ 65.000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="equip-card">
+      <div class="equip-header">
+        <h3>Compressor de Ar</h3>
+        <span>Suporte pneumático para equipamentos</span>
+      </div>
+      <div class="equip-body">
+        <div class="equip-row"><span class="label">Recomendado</span><span class="val">Schulz CSL 20 BR (isento de óleo)</span></div>
+        <div class="equip-row"><span class="label">Alternativa</span><span class="val">Atlas Copco SF 5 (silencioso)</span></div>
+        <div class="equip-row"><span class="label">Capacidade</span><span class="val">20 pés³/min · 120 PSI</span></div>
+        <div class="equip-row"><span class="label">Ruído</span><span class="val">≤ 68 dB</span></div>
+        <div class="equip-row"><span class="label">Fornecedor</span><span class="val">Schulz distribuidor MG · Amazon Business</span></div>
+        <div class="equip-price">
+          <div class="price-lbl">Investimento estimado</div>
+          <div class="price-val">R$ 4.500 – R$ 12.000</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="equip-card">
+      <div class="equip-header">
+        <h3>No-Break</h3>
+        <span>Proteção dos equipamentos digitais</span>
+      </div>
+      <div class="equip-body">
+        <div class="equip-row"><span class="label">Recomendado</span><span class="val">NHS Sinus Net 3200 VA Rack</span></div>
+        <div class="equip-row"><span class="label">Alternativa</span><span class="val">APC Smart-UPS 3000 VA</span></div>
+        <div class="equip-row"><span class="label">Potência</span><span class="val">3.000 VA (mín. para fresadora)</span></div>
+        <div class="equip-row"><span class="label">Autonomia</span><span class="val">15-30 min em carga plena</span></div>
+        <div class="equip-row"><span class="label">Fornecedor</span><span class="val">NHS Brasil · Kalunga · Amazon Business</span></div>
+        <div class="equip-price">
+          <div class="price-lbl">Investimento estimado</div>
+          <div class="price-val">R$ 3.500 – R$ 8.000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ========== CUSTOS DE ABERTURA ========== -->
+<hr class="divider">
+<div class="section">
+  <div class="section-label">Financeiro · Investimento</div>
+  <h2 class="section-title">Estimativa de Custos<br>para Abertura</h2>
+  <p class="section-intro">Distribuição dos R$ 400.000 de investimento inicial entre equipamentos, infraestrutura, legalização e capital de giro.</p>
+
+  <table style="margin-bottom:32px;">
+    <thead>
+      <tr>
+        <th>Categoria</th>
+        <th>Descrição</th>
+        <th style="text-align:right;">Valor (R$)</th>
+        <th style="text-align:right;">% do Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Equipamentos Digitais</strong></td><td class="muted">Fresadora, Scanner, Impressora 3D, Forno</td><td class="right">180.000</td><td class="right">45,0%</td></tr>
+      <tr><td><strong>Infraestrutura</strong></td><td class="muted">Compressor, No-Break, Bancadas, Móveis</td><td class="right">30.000</td><td class="muted">7,5%</td></tr>
+      <tr><td><strong>Reforma e Instalação</strong></td><td class="muted">Elétrica trifásica, ar-condicionado, layout</td><td class="right">35.000</td><td class="muted">8,75%</td></tr>
+      <tr><td><strong>Licenças e Legalização</strong></td><td class="muted">CNPJ, ANVISA (AFE), CRO-MG, INPI, Alvarás</td><td class="right">15.000</td><td class="muted">3,75%</td></tr>
+      <tr><td><strong>Software CAD/CAM</strong></td><td class="muted">Licenças 3Shape, exocad, Dental Wings</td><td class="right">25.000</td><td class="muted">6,25%</td></tr>
+      <tr><td><strong>Estoque Inicial</strong></td><td class="muted">Blocos zircônia, discos PMMA, resinas, fresas</td><td class="right">30.000</td><td class="muted">7,5%</td></tr>
+      <tr><td><strong>Marketing e Branding</strong></td><td class="muted">Site, identidade, materiais, mídias sociais</td><td class="right">15.000</td><td class="muted">3,75%</td></tr>
+      <tr><td><strong>Capital de Giro</strong></td><td class="muted">Reserva operacional 6 meses</td><td class="right">70.000</td><td class="muted">17,5%</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="2"><strong>TOTAL INVESTIMENTO</strong></td><td style="text-align:right; font-weight:800; font-size:16px;">R$ 400.000</td><td style="text-align:right;">100%</td></tr>
+    </tfoot>
+  </table>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon" style="background:#E1F5EE;">💰</div>
+      <h3>Custos Fixos Mensais</h3>
+      <div class="value">R$ 28.500</div>
+      <div class="sub-value">Aluguel + RH + encargos + energia + sistemas</div>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#E6F1FB;">📦</div>
+      <h3>Custos Variáveis Est.</h3>
+      <div class="value">30–40%</div>
+      <div class="sub-value">Da receita bruta em materiais e consumíveis</div>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#FAEEDA;">📊</div>
+      <h3>Ponto de Equilíbrio</h3>
+      <div class="value">R$ 47.500/mês</div>
+      <div class="sub-value">Receita mínima para cobrir todos os custos</div>
+    </div>
+  </div>
+
+  <div style="margin-top: 32px;">
+    <h3 style="font-size:16px; color:#0a2e24; margin-bottom:16px; font-weight:600;">Detalhamento dos Custos Fixos Mensais</h3>
+    <table>
+      <thead><tr><th>Item</th><th>Detalhes</th><th style="text-align:right;">Valor Mensal</th></tr></thead>
+      <tbody>
+        <tr><td>Aluguel do espaço</td><td class="muted">~100m² em Contagem (galpão/comercial)</td><td class="right">R$ 5.000</td></tr>
+        <tr><td>Energia elétrica</td><td class="muted">Consumo estimado equipamentos digitais</td><td class="right">R$ 2.500</td></tr>
+        <tr><td>Pró-labore (2 sócios)</td><td class="muted">R$ 4.500 cada</td><td class="right">R$ 9.000</td></tr>
+        <tr><td>Funcionário operacional</td><td class="muted">Auxiliar/técnico protético</td><td class="right">R$ 2.800</td></tr>
+        <tr><td>INSS + FGTS + encargos</td><td class="muted">Sobre folha de pagamento</td><td class="right">R$ 3.200</td></tr>
+        <tr><td>Contabilidade</td><td class="muted">Escritório contábil mensal</td><td class="right">R$ 800</td></tr>
+        <tr><td>Internet + Telefone</td><td class="muted">Link dedicado + PABX virtual</td><td class="right">R$ 400</td></tr>
+        <tr><td>Softwares e licenças</td><td class="muted">CAD/CAM, ERP, segurança</td><td class="right">R$ 1.200</td></tr>
+        <tr><td>Marketing digital</td><td class="muted">Gestão de tráfego e redes sociais</td><td class="right">R$ 1.500</td></tr>
+        <tr><td>Manutenção preventiva</td><td class="muted">Contratos de manutenção equipamentos</td><td class="right">R$ 1.500</td></tr>
+        <tr><td>Seguros e despesas</td><td class="muted">Seguro equipamentos + despesas diversas</td><td class="right">R$ 600</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="2"><strong>TOTAL FIXO MENSAL</strong></td><td style="text-align:right; font-weight:800;">R$ 28.500</td></tr></tfoot>
+    </table>
+  </div>
+</div>
+
+<!-- ========== PRECIFICAÇÃO ========== -->
+<hr class="divider">
+<div class="section" style="background:#f0fbf6; max-width:100%; padding:80px 40px;">
+<div style="max-width:1000px; margin:0 auto;">
+  <div class="section-label">Financeiro · Precificação</div>
+  <h2 class="section-title">Tabela de Preços dos Produtos</h2>
+  <p class="section-intro">Precificação baseada em custos reais + margem de contribuição sugerida. Preços competitivos para a região de Contagem/BH, com posicionamento intermediário-premium.</p>
+
+  <table class="price-table">
+    <thead><tr><th>Produto / Serviço</th><th>Custo Estimado</th><th>Preço Sugerido</th><th>Margem</th><th>Observação</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Coroa em Zircônia Monolítica</strong></td><td>R$ 80–120</td><td class="price">R$ 280–380</td><td class="margin">~65%</td><td class="muted">Produto carro-chefe</td></tr>
+      <tr><td>Coroa em Dissilicato de Lítio (E.max)</td><td>R$ 120–180</td><td class="price">R$ 400–550</td><td class="margin">~60%</td><td class="muted">Alta estética</td></tr>
+      <tr><td>Protocolo Total sobre Implante</td><td>R$ 400–600</td><td class="price">R$ 1.800–2.800</td><td class="margin">~70%</td><td class="muted">Alta lucratividade</td></tr>
+      <tr><td>Prótese Parcial Removível (PPR) Digital</td><td>R$ 150–250</td><td class="price">R$ 550–850</td><td class="margin">~62%</td><td class="muted">CrCo fresado</td></tr>
+      <tr><td>Prótese Total Impressa (base + dentes)</td><td>R$ 100–180</td><td class="price">R$ 380–600</td><td class="margin">~65%</td><td class="muted">Alta demanda</td></tr>
+      <tr><td>Pilar Personalizado (Zircônia/Titânio)</td><td>R$ 180–300</td><td class="price">R$ 650–1.000</td><td class="margin">~65%</td><td class="muted">Implantodontia</td></tr>
+      <tr><td>Faceta em Porcelana / E.max</td><td>R$ 100–160</td><td class="price">R$ 380–520</td><td class="margin">~62%</td><td class="muted">Alta estética</td></tr>
+      <tr><td>Modelo Digital em Resina 3D</td><td>R$ 25–45</td><td class="price">R$ 90–160</td><td class="margin">~68%</td><td class="muted">Alta rotatividade</td></tr>
+      <tr><td>Guia Cirúrgico Implante</td><td>R$ 60–100</td><td class="price">R$ 250–400</td><td class="margin">~70%</td><td class="muted">Volume crescente</td></tr>
+      <tr><td>Provisório em PMMA Fresado (unitário)</td><td>R$ 30–55</td><td class="price">R$ 120–200</td><td class="margin">~67%</td><td class="muted">Rápido e rentável</td></tr>
+      <tr><td>Inlay / Onlay em Zircônia</td><td>R$ 60–90</td><td class="price">R$ 220–330</td><td class="margin">~65%</td><td class="muted">Restauração indireta</td></tr>
+      <tr><td>Placa de Bruxismo (impressa)</td><td>R$ 35–60</td><td class="price">R$ 150–250</td><td class="margin">~70%</td><td class="muted">Volume crescente</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:13px; color:#888;">Margem de contribuição = (Preço – Custo variável) / Preço. Não inclui rateio de custos fixos. Ajuste conforme posicionamento comercial.</p>
+</div>
+</div>
+
+<!-- ========== CENÁRIOS ========== -->
+<hr class="divider">
+<div class="section">
+  <div class="section-label">Financeiro · Projeções</div>
+  <h2 class="section-title">Cenários de Receita</h2>
+  <p class="section-intro">Projeções para o 1º ano de operação. O cenário moderado é o baseline para viabilidade do negócio.</p>
+
+  <div class="scenarios">
+    <div class="scenario pessimista">
+      <span class="badge">Pessimista</span>
+      <div class="big-num">R$ 38k/mês</div>
+      <div class="detail" style="margin-top:12px;">
+        <strong>Receita anual:</strong> ~R$ 456.000<br><br>
+        <strong>Pedidos/mês:</strong> ~80 peças<br>
+        <strong>Resultado:</strong> Prejuízo nos primeiros 6 meses<br>
+        <strong>Payback:</strong> Acima de 36 meses<br><br>
+        Contexto de adaptação lenta ao mercado, poucos dentistas parceiros inicialmente. Capital de giro cobre déficits.
+      </div>
+    </div>
+
+    <div class="scenario moderado">
+      <div class="scenario-featured">Base</div>
+      <span class="badge">Moderado</span>
+      <div class="big-num">R$ 72k/mês</div>
+      <div class="detail" style="margin-top:12px;">
+        <strong>Receita anual:</strong> ~R$ 864.000<br><br>
+        <strong>Pedidos/mês:</strong> ~180 peças<br>
+        <strong>Resultado:</strong> Lucro a partir do 3º mês<br>
+        <strong>Payback:</strong> 18–24 meses<br><br>
+        Carteira de 30–50 dentistas ativos. Entregas em 3–5 dias. Base realista para planejamento financeiro.
+      </div>
+    </div>
+
+    <div class="scenario otimista">
+      <span class="badge">Otimista</span>
+      <div class="big-num">R$ 130k/mês</div>
+      <div class="detail" style="margin-top:12px;">
+        <strong>Receita anual:</strong> ~R$ 1.560.000<br><br>
+        <strong>Pedidos/mês:</strong> ~320 peças<br>
+        <strong>Resultado:</strong> Lucro desde o 1º mês<br>
+        <strong>Payback:</strong> 10–14 meses<br><br>
+        Rede de dentistas já desenvolvida, deliveries expressos, atendimento a clínicas de implante. Possível 2º funcionário.
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;">
+    <h3 style="font-size:16px; font-weight:600; color:#0a2e24; margin-bottom:16px;">DRE Simplificado — Cenário Moderado (Mensal)</h3>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <div class="fin-box">
+        <h3>Receitas</h3>
+        <div class="fin-row"><span class="item">Próteses digitais (CAD/CAM)</span><span class="amount">R$ 45.000</span></div>
+        <div class="fin-row"><span class="item">Impressão 3D e modelos</span><span class="amount">R$ 12.000</span></div>
+        <div class="fin-row"><span class="item">Protocolos/implante</span><span class="amount">R$ 10.000</span></div>
+        <div class="fin-row"><span class="item">PPR e provisórios</span><span class="amount">R$ 5.000</span></div>
+        <div class="fin-row" style="border-top:2px solid #e5e7e5; margin-top:4px; padding-top:12px;"><span class="item" style="font-weight:700;">Receita Bruta Total</span><span class="amount" style="font-size:16px;">R$ 72.000</span></div>
+      </div>
+      <div class="fin-box">
+        <h3>Custos e Resultado</h3>
+        <div class="fin-row"><span class="item">(-) Impostos Simples (~6%)</span><span class="amount neg">R$ 4.320</span></div>
+        <div class="fin-row"><span class="item">(-) Materiais/consumíveis (~30%)</span><span class="amount neg">R$ 21.600</span></div>
+        <div class="fin-row"><span class="item">(-) Custos fixos</span><span class="amount neg">R$ 28.500</span></div>
+        <div class="fin-row"><span class="item">(-) Depreciação equip.</span><span class="amount neg">R$ 3.000</span></div>
+        <div class="fin-row" style="border-top:2px solid #e5e7e5; margin-top:4px; padding-top:12px;"><span class="item" style="font-weight:700;">Lucro Líquido</span><span class="amount" style="font-size:16px; color:#0F6E56;">≈ R$ 14.580</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== CONCORRENTES + SWOT ========== -->
+<hr class="divider">
+<div class="section" style="background:#f0fbf6; max-width:100%; padding:80px 40px;">
+<div style="max-width:1000px; margin:0 auto;">
+  <div class="section-label">Mercado · Análise</div>
+  <h2 class="section-title">Análise de Concorrentes<br>Região BH / Contagem</h2>
+  <p class="section-intro">Mapeamento dos principais laboratórios digitais na grande BH e diferenciais estratégicos para posicionamento.</p>
+
+  <table class="comp-table" style="margin-bottom:48px;">
+    <thead><tr><th>Laboratório</th><th>Localização</th><th>Foco</th><th>Pontos Fracos (oportunidades)</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Compass 3D</strong></td>
+        <td>Belo Horizonte (Funcionários)</td>
+        <td>CAD/CAM premium, ortodontia, implante</td>
+        <td>Preço elevado; longe de Contagem; sem atendimento expresso</td>
+      </tr>
+      <tr>
+        <td><strong>Labs convencionais BH</strong></td>
+        <td>BH (vários bairros)</td>
+        <td>Prótese convencional, gesso</td>
+        <td>Tecnologia desatualizada; prazo longo (7–14 dias); sem digital</td>
+      </tr>
+      <tr>
+        <td><strong>Laboratórios de Contagem</strong></td>
+        <td>Contagem-MG</td>
+        <td>Prótese convencional local</td>
+        <td>Ausência total de fluxo digital; sem scanner/fresadora</td>
+      </tr>
+      <tr>
+        <td><strong>Hubs digitais SP / RJ</strong></td>
+        <td>São Paulo / Rio</td>
+        <td>Grande volume, CAD/CAM</td>
+        <td>Frete + prazo alto para MG; sem atendimento presencial</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 style="font-size:18px; font-weight:600; color:#0a2e24; margin-bottom:16px;">Diferenciais Competitivos Recomendados</h3>
+  <div class="card-grid" style="margin-bottom:48px;">
+    <div class="card">
+      <div class="card-icon" style="background:#E1F5EE;">⚡</div>
+      <h3>Entrega Expressa 48h</h3>
+      <p>Cobrir a lacuna de prazo dos concorrentes. Dentistas da região precisam de velocidade.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#E6F1FB;">🎯</div>
+      <h3>Consultoria Técnica Gratuita</h3>
+      <p>Ajudar dentistas a migrarem para fluxo digital — gera fidelização e posicionamento premium.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#FAEEDA;">📱</div>
+      <h3>Pedidos pelo WhatsApp/App</h3>
+      <p>Processo digital do início ao fim. Rastreamento de pedidos, aprovação de cases online.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#FCEBEB;">🦷</div>
+      <h3>Especialização em Implantes</h3>
+      <p>Foco em protocolos all-on e pilares CAD — segmento de maior margem e crescimento.</p>
+    </div>
+  </div>
+
+  <h3 style="font-size:18px; font-weight:600; color:#0a2e24; margin-bottom:20px;">Análise SWOT</h3>
+  <div class="swot-grid">
+    <div class="swot-cell forcas">
+      <h3>Forças</h3>
+      <ul>
+        <li>Tecnologia CAD/CAM de última geração</li>
+        <li>Localização estratégica em Contagem</li>
+        <li>Ausência de concorrência digital local</li>
+        <li>Capacidade de entrega rápida (48h)</li>
+        <li>Dois sócios com expertise complementar</li>
+        <li>Capital inicial robusto (R$ 400k)</li>
+      </ul>
+    </div>
+    <div class="swot-cell fraquezas">
+      <h3>Fraquezas</h3>
+      <ul>
+        <li>Empresa nova sem histórico no mercado</li>
+        <li>Curva de aprendizado em software CAD</li>
+        <li>Dependência de poucos fornecedores de insumo</li>
+        <li>Alta depreciação dos equipamentos digitais</li>
+        <li>Necessidade de capacitação contínua</li>
+      </ul>
+    </div>
+    <div class="swot-cell oportunidades">
+      <h3>Oportunidades</h3>
+      <ul>
+        <li>Mercado de implantes em forte crescimento</li>
+        <li>Migração digital acelerada pós-pandemia</li>
+        <li>Grande mercado de dentistas sem lab digital em Contagem</li>
+        <li>Demanda crescente por estética digital</li>
+        <li>Possibilidade de atendimento B2C futuro</li>
+        <li>Alinhadores e ortodontia digital em expansão</li>
+      </ul>
+    </div>
+    <div class="swot-cell ameacas">
+      <h3>Ameaças</h3>
+      <ul>
+        <li>Evolução rápida da tecnologia (obsolescência)</li>
+        <li>Grandes labs nacionais com escala de preço</li>
+        <li>Alta carga tributária no segmento</li>
+        <li>Dependência de dentistas parceiros</li>
+        <li>Flutuação do câmbio nos insumos importados</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ========== ESTRUTURA FISCAL ========== -->
+<hr class="divider">
+<div class="section">
+  <div class="section-label">Jurídico · Fiscal</div>
+  <h2 class="section-title">Estruturação Fiscal<br>e Societária</h2>
+  <p class="section-intro">Recomendações para abertura e enquadramento tributário mais vantajoso para laboratório protético digital.</p>
+
+  <div class="regime-grid">
+    <div class="regime-card">
+      <h4>MEI</h4>
+      <div class="rate">~R$ 70/mês</div>
+      <p>Inviável para dois sócios. Limite de faturamento muito baixo (R$ 81k/ano). Não aplicável.</p>
+    </div>
+    <div class="regime-card rec">
+      <div class="rec-badge">Recomendado</div>
+      <h4>Simples Nacional</h4>
+      <div class="rate">4,5–7,3%</div>
+      <p>Faturamento até R$ 4,8M/ano. Alíquota reduzida para serviços e produtos odontológicos. Ideal para início.</p>
+    </div>
+    <div class="regime-card">
+      <h4>Lucro Presumido</h4>
+      <div class="rate">~13,33%</div>
+      <p>Indicado quando faturamento superar ~R$ 2M/ano. Avalie com contador quando crescer.</p>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>Tipo Societário</h3>
+      <p><strong>SLU / LTDA</strong> com dois sócios. Recomendado: <strong>LTDA</strong> com contrato social definindo participação (50%/50% ou proporcional), responsabilidades e retirada de pró-labore. Aporte de R$ 200k por sócio.</p>
+    </div>
+    <div class="card">
+      <h3>CNAE Principal</h3>
+      <p><strong>3250-7/04</strong> — Fabricação de materiais para medicina e odontologia. Secundário: <strong>8650-0/05</strong> — Atividades de técnicos em prótese dentária.</p>
+    </div>
+    <div class="card">
+      <h3>Licenças Obrigatórias</h3>
+      <p>Alvará Municipal (PMCG), <strong>AFE ANVISA</strong> (Autorização de Funcionamento), <strong>Registro no CRO-MG</strong> (RT técnico), CNES (opcional), Vigilância Sanitária Estadual.</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 32px;">
+    <h3 style="font-size:16px; font-weight:600; color:#0a2e24; margin-bottom:16px;">Passo a Passo para Abertura da Empresa</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Definir o Contrato Social e Integralizar Capital</h4>
+          <p>Estabelecer participação societária, responsabilidades técnicas, retirada de pró-labore, regras de saída e divisão de lucros. Integralizar os R$ 400k no capital social.</p>
+          <span class="tag">Semana 1–2</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Registro na Junta Comercial de MG (JUCEMG)</h4>
+          <p>Abrir LTDA via Portal Redesim (GOV.BR). Escolher CNAE, endereço comercial, natureza jurídica. Tempo médio: 3–7 dias úteis.</p>
+          <span class="tag">Semana 2–3</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>CNPJ, Inscrição Estadual e Municipal</h4>
+          <p>CNPJ liberado após Junta. Inscrição Estadual (IE) em MG e alvará de funcionamento na Prefeitura de Contagem.</p>
+          <span class="tag">Semana 3–4</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Adesão ao Simples Nacional</h4>
+          <p>Optar pelo Simples Nacional em janeiro ou até 30 dias após abertura (empresas novas). Solicitar via Portal e-CAC da Receita Federal.</p>
+          <span class="tag">Semana 4</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>Registro no CRO-MG e Responsável Técnico</h4>
+          <p>O laboratório protético precisa de Responsável Técnico (TPD — Técnico em Prótese Dentária) registrado no CRO-MG. Se um dos sócios for TPD, registrar como RT.</p>
+          <span class="tag">Semana 4–6</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          <h4>Autorização de Funcionamento ANVISA (AFE)</h4>
+          <p>Protocolar pedido de AFE via sistema GGFIT/ANVISA. Necessário para fabricação de dispositivos médicos (próteses). Prazo: 30–90 dias. Prepare planta baixa e documentação técnica.</p>
+          <span class="tag">Semana 4–12</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">7</div>
+        <div class="step-content">
+          <h4>Reforma e Instalação do Espaço</h4>
+          <p>Execução da reforma: elétrica trifásica, ar-condicionado, bancadas, sala de fresagem com aspiração de pó de zircônia, área limpa para impressoras 3D.</p>
+          <span class="tag">Semana 4–12</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">8</div>
+        <div class="step-content">
+          <h4>Aquisição e Instalação dos Equipamentos</h4>
+          <p>Comprar fresadora, scanner, impressora 3D, forno, compressor e no-break. Solicitar instalação e treinamento dos fabricantes/distribuidores.</p>
+          <span class="tag">Semana 8–14</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">9</div>
+        <div class="step-content">
+          <h4>Treinamento em Software CAD/CAM</h4>
+          <p>Treinar a equipe em software (exocad, 3Shape ou Dental Wings). A maioria dos fabricantes oferece cursos presenciais e remotos inclusos.</p>
+          <span class="tag">Semana 12–16</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">10</div>
+        <div class="step-content">
+          <h4>Lançamento Comercial e Marketing</h4>
+          <p>Site profissional, perfis nas redes sociais, visita a dentistas da região, participação em encontros do CRO-MG, material de apresentação e portfólio digital.</p>
+          <span class="tag">Semana 14–18</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== CONTROLES / PLANILHAS ========== -->
+<hr class="divider">
+<div class="section" style="background:#f0fbf6; max-width:100%; padding:80px 40px;">
+<div style="max-width:1000px; margin:0 auto;">
+  <div class="section-label">Gestão · Controles</div>
+  <h2 class="section-title">Controles e Planilhas<br>de Gestão</h2>
+  <p class="section-intro">Estrutura de controles necessários para gestão eficiente do laboratório. Todos os modelos devem ser implementados desde o 1º dia.</p>
+
+  <div class="card-grid" style="margin-bottom:40px;">
+    <div class="card">
+      <div class="card-icon" style="background:#E1F5EE;">📋</div>
+      <h3>Controle de Pedidos (OS)</h3>
+      <p>Número OS · Dentista · Paciente · Produto · Data entrada · Prazo entrega · Status · Valor · Observações técnicas</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#E6F1FB;">📦</div>
+      <h3>Controle de Estoque</h3>
+      <p>Item · Unidade · Estoque mín/máx · Saldo atual · Custo unitário · Fornecedor · Data última compra · Ponto de pedido</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#FAEEDA;">🏭</div>
+      <h3>Inventário de Equipamentos</h3>
+      <p>Equipamento · Marca/Modelo · Nº série · Data compra · Valor · Garantia · Última manutenção · Responsável</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#FCEBEB;">💵</div>
+      <h3>Fluxo de Caixa</h3>
+      <p>Entradas/saídas diárias · Saldo projetado · Contas a pagar/receber · DRE mensal · Indicadores KPI</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#E1F5EE;">👥</div>
+      <h3>Carteira de Clientes (CRM)</h3>
+      <p>Dentista · Especialidade · Contato · Volume mensal · Última OS · Status relacionamento · Potencial de crescimento</p>
+    </div>
+    <div class="card">
+      <div class="card-icon" style="background:#EEEDFE;">🔧</div>
+      <h3>Manutenção Preventiva</h3>
+      <p>Equipamento · Periodicidade · Última data · Próxima data · Técnico responsável · Custo · Observações</p>
+    </div>
+  </div>
+
+  <h3 style="font-size:16px; font-weight:600; color:#0a2e24; margin-bottom:16px;">Controle de Estoque — Modelo</h3>
+  <table style="margin-bottom:32px;">
+    <thead><tr><th>Item</th><th>Un.</th><th>Saldo</th><th>Mín</th><th>Custo Unit.</th><th>Fornecedor</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Bloco Zircônia A1 14mm</td><td>un</td><td>12</td><td>5</td><td class="right">R$ 38</td><td>Dental Speed</td><td><span style="background:#E1F5EE;color:#0F6E56;font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px;">OK</span></td></tr>
+      <tr><td>Disco PMMA 98mm Rosa</td><td>un</td><td>3</td><td>3</td><td class="right">R$ 85</td><td>Dental Cremer</td><td><span style="background:#FAEEDA;color:#854F0B;font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px;">Repor</span></td></tr>
+      <tr><td>Resina 3D Provisória Clear</td><td>kg</td><td>1,2</td><td>1</td><td class="right">R$ 280</td><td>DentalProtese</td><td><span style="background:#E1F5EE;color:#0F6E56;font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px;">OK</span></td></tr>
+      <tr><td>Fresa Tungstenio 1mm</td><td>un</td><td>2</td><td>5</td><td class="right">R$ 55</td><td>OSG Dental</td><td><span style="background:#FCEBEB;color:#A32D2D;font-size:11px;font-weight:600;padding:3px 8px;border-radius:6px;">Urgente</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="font-size:16px; font-weight:600; color:#0a2e24; margin-bottom:16px;">KPIs Chave para Acompanhar Mensalmente</h3>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap:16px;">
+    <div style="background:#fff; border:1px solid #e5e7e5; border-radius:12px; padding:16px; text-align:center;">
+      <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:1px;">Ticket Médio</div>
+      <div style="font-size:22px; font-weight:700; color:#0a2e24;">R$ 400</div>
+      <div style="font-size:11px; color:#0F6E56;">meta mínima</div>
+    </div>
+    <div style="background:#fff; border:1px solid #e5e7e5; border-radius:12px; padding:16px; text-align:center;">
+      <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:1px;">OS/mês</div>
+      <div style="font-size:22px; font-weight:700; color:#0a2e24;">180</div>
+      <div style="font-size:11px; color:#0F6E56;">moderado</div>
+    </div>
+    <div style="background:#fff; border:1px solid #e5e7e5; border-radius:12px; padding:16px; text-align:center;">
+      <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:1px;">Taxa Refação</div>
+      <div style="font-size:22px; font-weight:700; color:#0a2e24;">&lt;3%</div>
+      <div style="font-size:11px; color:#0F6E56;">meta qualidade</div>
+    </div>
+    <div style="background:#fff; border:1px solid #e5e7e5; border-radius:12px; padding:16px; text-align:center;">
+      <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:1px;">Dentistas Ativos</div>
+      <div style="font-size:22px; font-weight:700; color:#0a2e24;">40+</div>
+      <div style="font-size:11px; color:#0F6E56;">após 6 meses</div>
+    </div>
+    <div style="background:#fff; border:1px solid #e5e7e5; border-radius:12px; padding:16px; text-align:center;">
+      <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:1px;">Prazo Médio</div>
+      <div style="font-size:22px; font-weight:700; color:#0a2e24;">3 dias</div>
+      <div style="font-size:11px; color:#0F6E56;">diferencial chave</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ========== VIABILIDADE ========== -->
+<hr class="divider">
+<div class="section">
+  <div class="section-label">Conclusão · Viabilidade</div>
+  <h2 class="section-title">Viabilidade do Negócio</h2>
+
+  <div class="highlight">
+    <div>
+      <div class="big">✔</div>
+      <div class="label">Negócio Viável</div>
+    </div>
+    <div>
+      <p>O laboratório protético digital em Contagem é <strong>altamente viável</strong>. A região carece de laboratórios com tecnologia CAD/CAM, o mercado de implantodontia e estética dental está em forte expansão, e o investimento de R$ 400k é adequado para uma estrutura competitiva. No cenário moderado, o payback ocorre em 18–24 meses com margem líquida de ~20%.</p>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="value">18–24 m</div>
+      <h3>Payback Estimado</h3>
+      <p>Retorno do investimento no cenário moderado com ~180 OS/mês.</p>
+    </div>
+    <div class="card">
+      <div class="value">~20%</div>
+      <h3>Margem Líquida</h3>
+      <p>Após impostos, custos fixos e variáveis no cenário base.</p>
+    </div>
+    <div class="card">
+      <div class="value">R$ 47.500</div>
+      <h3>Break-even Mensal</h3>
+      <p>Ponto de equilíbrio — receita mínima para cobrir todos os custos.</p>
+    </div>
+    <div class="card">
+      <div class="value">R$ 864k+</div>
+      <h3>Receita Ano 1</h3>
+      <p>Projeção conservadora de receita no primeiro ano de operação plena.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <strong>OralTech · Laboratório Protético Digital</strong><br>
+  Contagem · Minas Gerais<br><br>
+  Plano de Negócios elaborado com Claude (Anthropic) · 2025<br>
+  Este documento é confidencial e destinado exclusivamente aos sócios fundadores.
+</footer>
+
+
+
+</body></html>
